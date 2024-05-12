@@ -42,10 +42,6 @@ app.use('/api/v1/forms', formRouter);
 app.use(verifyJWT);
 app.use('/api/v1/user', userRouter);
 
-app.use('/', (req, res) => {
-  res.send('Hii, You have reached the backend servers of the forms');
-});
-
 app.all('*', (req, _res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
