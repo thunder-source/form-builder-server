@@ -37,15 +37,14 @@ app.use(express.json({ limit: '10kb' }));
 app.use(mongoSanitize());
 
 app.use(hpp());
-
-app.use('/', (req, res) => {
-  res.send('Hii, You have reached the backend servers of the forms');
-});
-
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/forms', formRouter);
 app.use(verifyJWT);
 app.use('/api/v1/user', userRouter);
+
+app.use('/', (req, res) => {
+  res.send('Hii, You have reached the backend servers of the forms');
+});
 
 app.all('*', (req, _res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
