@@ -4,8 +4,7 @@
   "scripts": {
     "start": "node api/index.ts",
     "dev": "nodemon",
-    "preview": "node dist/server.js",
-    "build": "rimraf dist && tsc"
+    "preview": "node dist/server.js"
   },
   "keywords": [],
   "author": "praditya manjhi",
