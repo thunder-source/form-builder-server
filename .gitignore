@@ -1,5 +1,6 @@
 .env
 logs
 public/img/users/*
-node_modules
+node_modules/
+/node_modules
 dist
