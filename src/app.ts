@@ -27,7 +27,7 @@ app.use(
 app.use(logger);
 
 app.use(credentials);
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: allowedOrigins }));
 
 app.use(express.static('public'));
 app.use(cookieParser());
