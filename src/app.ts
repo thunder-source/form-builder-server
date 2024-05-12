@@ -21,13 +21,13 @@ const app: Application = express();
 app.use(
   helmet({
     crossOriginResourcePolicy: false,
-  }),
+  })
 );
 
 app.use(logger);
 
 app.use(credentials);
-app.use(cors({ origin: allowedOrigins }));
+app.use(cors({ origin: '*' }));
 
 app.use(express.static('public'));
 app.use(cookieParser());
