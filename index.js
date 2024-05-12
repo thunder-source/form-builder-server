@@ -1,1 +1,3 @@
-require('./dist/server');
+const main = require('./dist/server');
+
+return main;
