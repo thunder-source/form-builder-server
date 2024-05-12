@@ -15,7 +15,7 @@
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET, OPTIONS"
+          "value": "GET, OPTIONS, POST, PUT, DELETE, PATCH"
         },
         {
           "key": "Cache-Control",
