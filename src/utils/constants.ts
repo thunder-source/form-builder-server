@@ -4,8 +4,8 @@ export const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:4173',
   'http://127.0.0.1:5173',
-  'https://form-builder-client-rosy.vercel.app',
-  'https://form-builder-server-grvb.vercel.app/',
+  'https://forms-api.pradityamanjhi.site',
+  'https://forms.pradityamanjhi.site',
 ];
 
 export const accessTokenExpiresIn = '1h';
