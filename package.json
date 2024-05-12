@@ -2,17 +2,11 @@
   "name": "@form-builder/server",
   "version": "1.0.0",
   "scripts": {
+    "start": "node api/index.ts",
     "dev": "nodemon",
     "preview": "node dist/server.js",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist"
+    "build": "rimraf dist && tsc"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
   "keywords": [],
   "author": "praditya manjhi",
   "license": "ISC",
