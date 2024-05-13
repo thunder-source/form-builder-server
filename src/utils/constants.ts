@@ -6,7 +6,7 @@ export const allowedOrigins = [
   'http://127.0.0.1:5173',
   'https://forms-api.pradityamanjhi.site',
   'https://forms.pradityamanjhi.site',
-  'https://form-builder-client-rosy.vercel.app/',
+  'https://form-builder-client-rosy.vercel.app',
 ];
 
 export const accessTokenExpiresIn = '1h';
